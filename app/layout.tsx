@@ -1,0 +1,3 @@
+import "./globals.css"; import Link from "next/link";
+export const metadata={title:"RC Endurance Driver Hub",description:"Find drivers for RC endurance racing"};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><header className="border-b border-slate-700 bg-[#0a1626]"><div className="mx-auto max-w-6xl p-4 flex items-center justify-between"><Link href="/" className="font-bold text-xl">🏁 RC Endurance Driver Hub</Link><nav className="flex gap-4 text-sm"><Link href="/drivers">Find Drivers</Link><Link href="/manager">Team Manager</Link><Link href="/admin">Admin</Link></nav></div></header><main className="mx-auto max-w-6xl p-5">{children}</main></body></html>}
